@@ -8,7 +8,8 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 
 const generateScrapperUrl =
-  (apiKey) = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
+  (apiKey) => `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`;
+  
 
 app.get("/", (req, res) => {
   res.send("Welcome to Amazon Scrapper Api.");

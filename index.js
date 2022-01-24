@@ -6,7 +6,7 @@ const PORT = process.env.PORT || 5000;
 
 // const apiKey ='4d9543633ff2880107920da230ebabb5';
 
-const generateScrapperUrl = (apiKey) = `http://api.scraperapi.com?api_key=${apiKey}&autoparse=true`
+const generateScrapperUrl = (api_Key) = `http://api.scraperapi.com?api_key=${api_Key}&autoparse=true`
 
 app.use(express.json());
 
